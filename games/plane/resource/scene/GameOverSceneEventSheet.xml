@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="GameOverScene" previous="" next="" version="2.0">
+  <item type="instance" UID="53"/>
+  <item type="instance" UID="72"/>
+  <item type="instance" UID="47"/>
+  <item type="instance" UID="49"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="再来一次"/>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="GameScene" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" callTarget="instance" callName="execTween" target="再来一次">
+      <item valueDataType="any" value="tween" name="key"/>
+      <item valueDataType="any" value="255.55" name="x"/>
+      <item valueDataType="any" value="530" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="1000" name="duration"/>
+      <item valueDataType="string" value="bounceOut" name="ease"/>
+      <item valueDataType="any" value="0" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="1" name="scaleX"/>
+      <item valueDataType="any" value="1" name="scaleY"/>
+    </item>
+    <item type="action" callTarget="instance" callName="execTween" target="游戏结束标题">
+      <item valueDataType="any" value="tween" name="key"/>
+      <item valueDataType="any" value="255.55" name="x"/>
+      <item valueDataType="any" value="250" name="y"/>
+      <item valueDataType="any" value="" name="anchorX"/>
+      <item valueDataType="any" value="" name="anchorY"/>
+      <item valueDataType="any" value="" name="width"/>
+      <item valueDataType="any" value="" name="height"/>
+      <item valueDataType="any" value="" name="rotation"/>
+      <item valueDataType="any" value="" name="alpha"/>
+      <item valueDataType="any" value="1000" name="duration"/>
+      <item valueDataType="string" value="bounceOut" name="ease"/>
+      <item valueDataType="any" value="0" name="waitTime"/>
+      <item valueDataType="any" value="0" name="loop"/>
+      <item valueDataType="any" value="1" name="scaleX"/>
+      <item valueDataType="any" value="1" name="scaleY"/>
+    </item>
+  </item>
+</eventSheets>

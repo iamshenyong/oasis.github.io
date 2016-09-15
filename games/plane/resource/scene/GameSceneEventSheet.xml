@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="GameScene" previous="" next="" version="2.0">
+  <item type="instance" UID="87">
+    <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+  </item>
+  <item type="instance" UID="84">
+    <item type="behavior" behaviorType="PinBehavior" name="别针"/>
+  </item>
+  <item type="instance" UID="81"/>
+  <item type="instance" UID="78"/>
+  <item type="instance" UID="75"/>
+  <item type="instance" UID="22">
+    <item initValue="0" variableType="number" variableName="score" type="variable"/>
+    <item initValue="10" variableType="number" variableName="HP" type="variable"/>
+    <item type="behavior" behaviorType="DragDropBehaivor" name="拖拽行为">
+      <item valueDataType="any" value="0" name="axes"/>
+      <item valueDataType="any" value="1" name="enabled"/>
+    </item>
+  </item>
+  <item type="instance" UID="28">
+    <item initValue="10" variableType="number" variableName="HP" type="variable"/>
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹行为">
+      <item valueDataType="any" value="100" name="speed"/>
+      <item valueDataType="any" value="0" name="acceleration"/>
+      <item valueDataType="any" value="0" name="gravity"/>
+      <item valueDataType="any" value="90" name="angle"/>
+    </item>
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁"/>
+  </item>
+  <item type="instance" UID="32">
+    <item initValue="100" variableType="number" variableName="HP" type="variable"/>
+    <item initValue="0" variableType="number" variableName="movetag" type="variable"/>
+  </item>
+  <item type="instance" UID="71">
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹行为">
+      <item valueDataType="any" value="300" name="speed"/>
+      <item valueDataType="any" value="0" name="acceleration"/>
+      <item valueDataType="any" value="0" name="gravity"/>
+      <item valueDataType="any" value="90" name="angle"/>
+    </item>
+  </item>
+  <item type="instance" UID="24">
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹">
+      <item valueDataType="any" value="600" name="speed"/>
+      <item valueDataType="any" value="0" name="acceleration"/>
+      <item valueDataType="any" value="0" name="gravity"/>
+      <item valueDataType="any" value="270" name="angle"/>
+    </item>
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁"/>
+  </item>
+  <item type="instance" UID="30">
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹行为">
+      <item valueDataType="any" value="400" name="speed"/>
+      <item valueDataType="any" value="0" name="acceleration"/>
+      <item valueDataType="any" value="0" name="gravity"/>
+      <item valueDataType="any" value="90" name="angle"/>
+    </item>
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁"/>
+  </item>
+  <item type="instance" UID="34">
+    <item type="behavior" behaviorType="BulletBehaivor" name="子弹行为">
+      <item valueDataType="any" value="400" name="speed"/>
+      <item valueDataType="any" value="0" name="acceleration"/>
+      <item valueDataType="any" value="0" name="gravity"/>
+      <item valueDataType="any" value="90" name="angle"/>
+    </item>
+    <item type="behavior" behaviorType="DestoryOutsideLayoutBehaivor" name="出界销毁"/>
+  </item>
+  <item type="instance" UID="18">
+    <item type="behavior" behaviorType="ScrollBehaivor" name="滚屏行为">
+      <item valueDataType="any" value="1" name="active"/>
+      <item valueDataType="any" value="scrollDown" name="scrollDirectionType"/>
+      <item valueDataType="any" value="180" name="speed"/>
+    </item>
+  </item>
+  <item type="instance" UID="17">
+    <item type="behavior" behaviorType="ScrollBehaivor" name="滚屏行为">
+      <item valueDataType="any" value="1" name="active"/>
+      <item valueDataType="any" value="scrollDown" name="scrollDirectionType"/>
+      <item valueDataType="any" value="180" name="speed"/>
+    </item>
+  </item>
+  <item type="instance" UID="42"/>
+  <item type="instance" UID="40"/>
+  <item type="instance" UID="38"/>
+  <item type="instance" UID="36"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="0.2" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="spawn" target="hero">
+      <item valueDataType="string" value="英雄子弹" name="10" isFamily="false"/>
+      <item valueDataType="any" value="0" name="11"/>
+      <item valueDataType="any" value="0" name="12"/>
+      <item valueDataType="any" value="-30" name="13"/>
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="play" target="英雄开火音效">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="2" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="敌人" name="23" isFamily="false"/>
+      <item valueDataType="any" value="1" name="22"/>
+      <item valueDataType="any" value="40%2Brandom()*340" name="21"/>
+      <item valueDataType="any" value="0" name="20"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="2" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="spawn" target="敌人">
+      <item valueDataType="string" value="敌人子弹" name="10" isFamily="false"/>
+      <item valueDataType="any" value="0" name="11"/>
+      <item valueDataType="any" value="0" name="12"/>
+      <item valueDataType="any" value="0" name="13"/>
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="敌人">
+      <item valueDataType="string" value="英雄子弹" name="object" isFamily="false"/>
+    </item>
+    <item type="action" callTarget="instance" callName="subtractFrom" target="敌人">
+      <item valueDataType="string" value="HP" name="10" variable="true"/>
+      <item valueDataType="any" value="3" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="英雄子弹"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="敌人">
+      <item valueDataType="string" value="HP" name="instanceVariable" variable="true"/>
+      <item valueDataType="any" value="lessOrEqual" name="operationType"/>
+      <item valueDataType="any" value="0" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="play" target="敌人死亡音效">
+      <item valueDataType="any" value="1" name="2"/>
+      <item valueDataType="any" value="1" name="3"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="敌人"/>
+    <item type="action" callTarget="instance" callName="addTo" target="hero">
+      <item valueDataType="string" value="score" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setBitmapText" target="score">
+      <item valueDataType="any" value="hero.score" name="2"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="敌人子弹">
+      <item valueDataType="string" value="hero" name="object" isFamily="false"/>
+    </item>
+    <item type="action" callTarget="instance" callName="subtractFrom" target="hero">
+      <item valueDataType="string" value="HP" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="敌人子弹"/>
+    <item type="action" callTarget="instance" callName="setBitmapText" target="血量">
+      <item valueDataType="any" value="'HP'%2Bhero.HP" name="2"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="hero">
+      <item valueDataType="string" value="HP" name="instanceVariable" variable="true"/>
+      <item valueDataType="any" value="lessOrEqual" name="operationType"/>
+      <item valueDataType="any" value="0" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="hero"/>
+    <item type="action" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="any" value="GameOverScene" name="18"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareYPosEvent" callName="compareY" isTrigger="false" target="BOSS">
+      <item valueDataType="any" value="lessThan" name="operationType"/>
+      <item valueDataType="any" value="100" name="y"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="hero">
+      <item valueDataType="string" value="score" name="instanceVariable" variable="true"/>
+      <item valueDataType="any" value="greaterThan" name="operationType"/>
+      <item valueDataType="any" value="15" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="moveAtAngle" target="BOSS">
+      <item valueDataType="any" value="90" name="14"/>
+      <item valueDataType="any" value="3" name="15"/>
+    </item>
+    <item type="action" callTarget="instance" callName="enabledDisabledCollision" target="BOSS">
+      <item valueDataType="any" value="1" name="status"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareYPosEvent" callName="compareY" isTrigger="false" target="BOSS">
+      <item valueDataType="any" value="greaterOrEqual" name="operationType"/>
+      <item valueDataType="any" value="100" name="y"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="0.5" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="spawn" target="BOSS">
+      <item valueDataType="string" value="BOSS子弹" name="10" isFamily="false"/>
+      <item valueDataType="any" value="0" name="11"/>
+      <item valueDataType="any" value="30" name="12"/>
+      <item valueDataType="any" value="30" name="13"/>
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+    <item type="action" callTarget="instance" callName="spawn" target="BOSS">
+      <item valueDataType="string" value="BOSS子弹" name="10" isFamily="false"/>
+      <item valueDataType="any" value="0" name="11"/>
+      <item valueDataType="any" value="-30" name="12"/>
+      <item valueDataType="any" value="30" name="13"/>
+      <item valueDataType="any" value="0" name="14"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="英雄子弹">
+      <item valueDataType="string" value="BOSS" name="object" isFamily="false"/>
+    </item>
+    <item type="action" callTarget="instance" callName="subtractFrom" target="BOSS">
+      <item valueDataType="string" value="HP" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="英雄子弹"/>
+    <item type="action" callTarget="instance" callName="setWidth" target="AISprite86">
+      <item valueDataType="any" value="(BOSS.HP%2F100)*200" name="16"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="BOSS">
+      <item valueDataType="string" value="movetag" name="instanceVariable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="1" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="moveAtAngle" target="BOSS">
+      <item valueDataType="any" value="180" name="14"/>
+      <item valueDataType="any" value="1" name="15"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="BOSS">
+      <item valueDataType="string" value="movetag" name="instanceVariable" variable="true"/>
+      <item valueDataType="any" value="equalTo" name="operationType"/>
+      <item valueDataType="any" value="0" name="value"/>
+    </item>
+    <item type="action" callTarget="instance" callName="moveAtAngle" target="BOSS">
+      <item valueDataType="any" value="0" name="14"/>
+      <item valueDataType="any" value="1" name="15"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="BOSS子弹">
+      <item valueDataType="string" value="hero" name="object" isFamily="false"/>
+    </item>
+    <item type="action" callTarget="instance" callName="subtractFrom" target="hero">
+      <item valueDataType="string" value="HP" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="11"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="BOSS子弹"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnCollisionWithOtherObjectEvent" callName="onCollisionWithOtherObject" isTrigger="true" target="血">
+      <item valueDataType="string" value="hero" name="object" isFamily="false"/>
+    </item>
+    <item type="action" callTarget="instance" callName="destory" target="血"/>
+    <item type="action" callTarget="instance" callName="addTo" target="hero">
+      <item valueDataType="string" value="HP" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="11"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareXPosEvent" callName="compareX" isTrigger="false" target="BOSS">
+      <item valueDataType="any" value="greaterThan" name="operationType"/>
+      <item valueDataType="any" value="300%2Brandom()*50" name="x"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" target="BOSS">
+      <item valueDataType="string" value="movetag" name="10" variable="true"/>
+      <item valueDataType="any" value="1" name="11"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareXPosEvent" callName="compareX" isTrigger="false" target="BOSS">
+      <item valueDataType="any" value="lessThan" name="operationType"/>
+      <item valueDataType="any" value="100%2Brandom()*50" name="x"/>
+    </item>
+    <item type="action" callTarget="instance" callName="setValue" target="BOSS">
+      <item valueDataType="string" value="movetag" name="10" variable="true"/>
+      <item valueDataType="any" value="0" name="11"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="EveryXSecondsEvent" callName="everyXSecondEvent" isTrigger="false" target="System">
+      <item valueDataType="any" value="10" name="interval"/>
+    </item>
+    <item type="action" callTarget="instance" callName="createObject" target="System">
+      <item valueDataType="string" value="血" name="23" isFamily="false"/>
+      <item valueDataType="any" value="0" name="22"/>
+      <item valueDataType="any" value="40%2Brandom()*340" name="21"/>
+      <item valueDataType="any" value="0" name="20"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnSceneInitCompleteEvent" callName="onSceneInitComplete" isTrigger="true" target="System"/>
+    <item type="action" callTarget="instance" callName="pin" target="AISprite86" behaviorName="别针">
+      <item valueDataType="string" value="BOSS" name="1" isFamily="false"/>
+      <item valueDataType="any" value="0" name="2"/>
+    </item>
+    <item type="action" callTarget="instance" callName="pin" target="AISprite83" behaviorName="别针">
+      <item valueDataType="string" value="BOSS" name="1" isFamily="false"/>
+      <item valueDataType="any" value="0" name="2"/>
+    </item>
+    <item type="action" callTarget="instance" callName="enabledDisabledCollision" target="BOSS">
+      <item valueDataType="any" value="2" name="status"/>
+    </item>
+  </item>
+</eventSheets>
