@@ -61,7 +61,7 @@ body {
 #tux-gear {
     width: 8em;
     height: 8em;
-    background-image: url('../_files/oasis_logo.png');
+    background-image: url('_files/oasis_logo.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
