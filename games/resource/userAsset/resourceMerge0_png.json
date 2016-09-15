@@ -1,0 +1,9 @@
+{"file":"resourceMerge0_png.png","frames":{
+"colored_grass.png":{"x":1,"y":1,"w":1024,"h":1024,"offX":0,"offY":0,"sourceW":1024,"sourceH":1024},
+"grass.png":{"x":1,"y":1026,"w":70,"h":70,"offX":0,"offY":0,"sourceW":70,"sourceH":70},
+"elementMetal032.png":{"x":1,"y":1097,"w":100,"h":32,"offX":0,"offY":0,"sourceW":100,"sourceH":32},
+"elementMetal041.png":{"x":1,"y":1130,"w":32,"h":100,"offX":0,"offY":0,"sourceW":32,"sourceH":100},
+"elementMetal020.png":{"x":1,"y":1231,"w":32,"h":100,"offX":0,"offY":0,"sourceW":32,"sourceH":100},
+"elementMetal029.png":{"x":72,"y":1026,"w":100,"h":32,"offX":0,"offY":0,"sourceW":100,"sourceH":32},
+"elementMetal036.png":{"x":1,"y":1332,"w":32,"h":100,"offX":0,"offY":0,"sourceW":32,"sourceH":100},
+"alienGreen_round.png":{"x":72,"y":1059,"w":30,"h":30,"offX":0,"offY":0,"sourceW":30,"sourceH":30}}}
