@@ -4,207 +4,26 @@
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>The Oasis Archives</title>
 		<link rel="icon" type="image/png" href="files/favicon.png">
-        <link rel="stylesheet" href="files/main.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+		<script language="JavaScript"  type="text/javascript" src="js/load_iframe.js"></script>
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
 	        <div id="tux-gear"></div>
-			<h1><a href="index.html">The Oasis Archives </a></h1>
+			<h1><input type="button" value="The Oasis Archives" id="archives_btn" readonly onclick="load_archives()"/></h1>
 			<nav>
 			<ul>
-				<li><a href="https://www.kernel.org/category/about.html">绿洲计划</a></li>
-				<li><a href="https://www.kernel.org/category/contact-us.html">加入我们</a></li>
-				<li><a href="https://www.kernel.org/category/signatures.html">风采展示</a></li>
-				<li><a href="games/fire/index.html">贡献勋章</a></li>
-				<li><a href="games/plane/index.html">意见建议</a></li>
+				<li><input type="button" value="绿洲计划" class="banner_btn" readonly onclick="load_about()"/> </li>
+				<li><input type="button" value="加入我们" class="banner_btn" readonly onclick="load_join()"/> </li>
+				<li><input type="button" value="风采展示" class="banner_btn" readonly onclick="load_join()"/> </li>
+				<li><input type="button" value="贡献勋章" class="banner_btn" readonly onclick="load_join()"/> </li>
+				<li><input type="button" value="绿洲传说" class="banner_btn" readonly onclick="load_join()"/> </li>
 			</ul>
 			</nav>
         </header><!-- /#banner -->
-                
     <aside id="featured" class="body">
-    <article>
-		<h1>1. 常用数据结构、算法库</h1>
-        <table id="releases-1">
-        <tbody>
-			<tr align="left">
-				<td>rbtree:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>list:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>ringbuffer:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-		</tbody>
-		</table>
-		<br>
-		<h1>2. 组件库</h1>
-        <table id="releases-2">
-        <tbody>
-			<tr align="left">
-				<td>rbtree:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>list:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>ringbuffer:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-		</tbody>
-		</table>
-		<br>
-		<h1>3. 调测工具</h1>
-        <table id="releases-3">
-        <tbody>
-			<tr align="left">
-				<td>rbtree:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>list:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>ringbuffer:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-		</tbody>
-		</table>
-		<br>
-		<h1>4. 常用数据结构、算法库</h1>
-        <table id="releases-4">
-        <tbody>
-			<tr align="left">
-				<td>rbtree:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>list:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>ringbuffer:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-		</tbody>
-		</table>
-		<br>
-		<h1>5. 常用数据结构、算法库</h1>
-        <table id="releases-5">
-        <tbody>
-			<tr align="left">
-				<td>rbtree:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>list:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-            <tr align="left">
-				<td>ringbuffer:</td>
-				<td>[<a href="xxxxx" title="Download complete tarball">tar.xz</a>] </td>
-				<td>[<a href="xxxxx" title="Download PGP verification signature">git</a>]  </td>
-				<td>[<a href="xxxxx" title="Download patch to previous mainline">docment</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">sample</a>] </td>
-				<td>[<a href="xxxxx" title="View diff in cgit">maintainer</a>] </td>
-				<td>[<a href="xxxxx" title="View detailed change logs">changelog</a>] </td>
-				<td> </td>
-			</tr>
-		</tbody>
-		</table>
-		<br>
-    </article>
+		<iframe id="content_iframe" src="subject/archives.html">浏览器不支持iframe</iframe>
 	</aside>
         <section id="extras" class="body">
 			<div class="blogroll">
