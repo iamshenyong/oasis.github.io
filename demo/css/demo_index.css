@@ -1,0 +1,173 @@
+﻿/* style */
+#demo_container{
+    background: #FFFFFF;
+    margin: 1.5em auto;
+    padding: 1.85em 1em;
+    width: 80em;
+	height: 50em;
+    border: thin solid;
+    border-color: #DDDACF #CCC8B8 #BBB59F;
+    box-shadow: 0 0.1em 0.3em #CCC8B8;
+    border-radius: 0.5em;
+	display: -webkit-box;
+}
+
+#demo_bar{
+	border: none;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 1;
+	border-right: thin solid;
+}
+
+#demo_bar span{
+	cursor: pointer;
+}
+
+.hand_link span{
+	cursor: pointer;
+}
+
+.hand_link div{
+	cursor: pointer;
+}
+
+#demo_content{
+	border: none;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 3;
+}
+
+#demo_content iframe{
+	border: none;
+	width: 100%;
+	height: 50em;
+	margin: 0;
+	padding: 0;
+}
+
+#bankground {
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 40em;
+	background-image: url('../image/oasis_1.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+}
+
+#position1 {
+	margin-left:8em;
+	margin-top:15em;
+	width: 4em;
+	height: 4em;
+	border: thin solid;
+	
+}
+
+#position1:hover,
+#position1:active{
+	background-color:yellow;
+	visibility:hidden;
+}
+
+/* color */
+#red_color{
+	color: red;
+}
+#blank_color{
+	color: blank;
+}
+#yellow_color{
+	color: yellow;
+}
+#blue_color{
+	color: blue;
+}
+#green_color{
+	color: green;
+}
+
+/* font */
+.blod_font{
+	font-weight: bold;
+}
+
+#SimSun_id{
+	font-family: 宋体;
+}
+#SimHei_id{
+	font-family: 黑体;
+}
+#PMingLiU_id{
+	font-family: 新细明体;
+}
+#KaiTi_GB2312_id{
+	font-family: 楷体_GB2312;
+}
+
+#LiSu_id{
+	font-family: 隶书;
+}
+
+/* flex box */
+#box_container1, #box_container2{
+    background: #FFFFFF;
+    margin: 1.5em auto;
+    padding: 1.85em 1em;
+    border: thin solid;
+    border-color: #DDDACF #CCC8B8 #BBB59F;
+	display: -webkit-box;
+}
+
+#box1{
+	border: thin solid;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 1;
+}
+#box2{
+	border: thin solid;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 2;
+}
+#box3{
+	border: thin solid;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 3;
+}
+
+#box4{
+	border: thin solid;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 3;
+}
+#box5{
+	border: thin solid;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 2;
+}
+#box6{
+	border: thin solid;
+	background-color: 0;
+	margin: 1em;
+	padding: 1em;
+	-webkit-box-flex: 1;
+}
+
+
+
+
