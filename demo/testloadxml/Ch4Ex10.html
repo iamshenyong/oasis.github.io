@@ -7,7 +7,7 @@
 <script type="text/javascript">
 window.addEventListener('load', eventWindowLoaded, false);	
 function eventWindowLoaded() {
-
+	loaddata();
 	canvasApp();
 	
 }
@@ -66,6 +66,38 @@ function canvasApp(){
 
 }
 
+
+function loadxmlDoc(file){
+	try{
+		//IE
+		xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+	}catch(e){
+		////Firefox, Mozilla, Opera, etc
+		xmlDoc=document.implementation.createDocument("","",null);
+	}
+
+	try{
+		xmlDoc.async=false;
+		xmlDoc.load(file);//chrome没有load方法
+	}catch(e){
+		//针对Chrome,不过只能通过http访问,通过file协议访问会报错
+		var xmlhttp = new window.XMLHttpRequest();  
+		xmlhttp.open("GET",file,false);  
+		xmlhttp.send(null);  
+		xmlDoc = xmlhttp.responseXML.documentElement; 
+	}
+	return xmlDoc;
+}
+
+function loaddata(){
+	var ob=loadxmlDoc("tiled_tile_map1.tmx");
+	var data=ob.getElementsByTagName("data");
+	document.write("load tmx ok<br/>");
+	for(var i=0;i<data.length;i++){
+		var  content=stu[i].childNodes;
+		document.write("<br/>");
+	}
+}
 
 </script> 
 </head>
