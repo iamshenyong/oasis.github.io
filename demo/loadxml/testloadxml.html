@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js里各浏览器解析XML,支持IE、火狐、Chrome等</title>
+</head>
+<body>
+    <script>
+        function loadxmlDoc(file){
+            try{
+                //IE
+                xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+            }catch(e){
+                ////Firefox, Mozilla, Opera, etc
+                xmlDoc=document.implementation.createDocument("","",null);
+            }
+
+            try{
+                xmlDoc.async=false;
+                xmlDoc.load(file);//chrome没有load方法
+            }catch(e){
+                //针对Chrome,不过只能通过http访问,通过file协议访问会报错
+                var xmlhttp = new window.XMLHttpRequest();  
+                xmlhttp.open("GET",file,false);  
+                xmlhttp.send(null);  
+                xmlDoc = xmlhttp.responseXML.documentElement; 
+            }
+            return xmlDoc;
+        }
+
+        var ob=loadxmlDoc("stu.xml");
+        var stu=ob.getElementsByTagName("stu");
+        for(var i=0;i<stu.length;i++){
+            var  data=stu[i].childNodes;
+            for(var j=0;j<data.length;j++){
+                if(data[j].nodeType==1){
+                    if(document.all)
+                        document.write(data[j].text+" ");//IE
+                    else
+                        document.write(data[j].textContent+" ");
+                }
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>
