@@ -90,7 +90,7 @@ function loadxmlDoc(file){
 }
 
 function loaddata(){
-	var ob=loadxmlDoc("tiled_tile_map1.xml");
+	var ob=loadxmlDoc("tiled_tile_map1.tmx");
 	var data=ob.getElementsByTagName("data");
 	document.write("load tmx ok<br/>");
 	for(var i=0;i<data.length;i++){
